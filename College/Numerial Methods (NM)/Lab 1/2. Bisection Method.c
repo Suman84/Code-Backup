@@ -2,11 +2,14 @@
 #include <math.h>
 #include <string.h>
 
-#define F(x) (x*x*x - 2*x - 5)
+#define F(x) (A*pow(x,a) + B*pow(x,b)+ C*pow(x,c) + D)
 #define decimal_place 0.0001f
 
 int main()
 {
+    int a,b,c,A,B,C,D;
+    printf("Suppose function F(x) is in form \"Ax^a + Bx^b + Cx^c + D\"\nEnter the value of A,a,B,b,C,c,D\n");
+    scanf("%d%d%d%d%d%d%d",&A,&a,&B,&b,&C,&c,&D);
     int i = 1;
     float x1, x2, x0, temp_x0;
 
